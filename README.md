@@ -5,6 +5,26 @@ This repo is an implementation of the EchoFi coding challenge, which asks for an
 
 ## Overview
 
+### Building and Testing
+
+Clone this repo, then from inside the repo directory:
+
+```bash
+make clean
+make test
+./test
+Running BrokerClientTests
+ * Running test: testEmpty
+ * Running test: testBuySimple
+ * Running test: testBuyPartial
+ * Running test: testBuySellMultipleAvgPrice
+ * Running test: testBuySellSimple
+ * Running test: testBuySellCheckProfit
+ * Running test: testSellNone
+All tests passed!
+```
+
+
 ### Interface
 
 This implementation provides an interface `BrokerClient`, which is initialized with some initial cash balance. The main interface methods are:
